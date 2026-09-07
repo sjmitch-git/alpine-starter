@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-xl shadow-lg text-center space-y-4"
+         x-data="{ count: 0 }">
+
+        <h1 class="text-3xl font-bold text-indigo-600">
+            Django + HTMX + Alpine + Tailwind
+        </h1>
+
+        <p class="text-lg">Alpine counter: <span x-text="count" class="font-bold"></span></p>
+
+        <button @click="count++"
+                class="px-5 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">
+            Increment with Alpine
+        </button>
+    </div>
+</div>
+{% endblock %}

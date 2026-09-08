@@ -1,20 +1,30 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="flex items-center justify-center min-h-screen">
-    <div class="bg-white p-8 rounded-xl shadow-lg text-center space-y-4"
+<div class="flex items-center justify-center min-h-stretch">
+    <div class="bg-white max-w-prose p-8 rounded-xl shadow-lg text-center space-y-4"
          x-data="{ count: 0 }">
 
-        <h1 class="text-3xl font-bold text-indigo-600">
-            Django + HTMX + Alpine + Tailwind
-        </h1>
+        {% include "components/heading.html" with level="h1" text="Welcome!" %}
 
-        <p class="text-lg">Alpine counter: <span x-text="count" class="font-bold"></span></p>
+        {% include "components/heading.html" with level="h2" text=PROJECT_TITLE classes="text-secondary" %}
+
+        <div class="space-y-4 bg-gray-200 p-4 rounded-md">
+            {% include "components/heading.html" with level="h3" text="HTMX Alpine.js example" %}
+            <p class="text-lg">Counter: <span x-text="count" class="font-bold"></span></p>
 
         <button @click="count++"
-                class="px-5 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">
+                class="btn btn-primary">
             Increment with Alpine
         </button>
+        <pre>
+<code>&lt;div x-data="{ count: 0 }"/&gt;
+    &lt;p&gt;Counter: &lt;span x-text="count"&gt;&lt;/span&gt;&lt;/p&gt;
+    &lt;button @click="count++"&gt;
+        Increment with Alpine
+    &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+        </div>
     </div>
 </div>
 {% endblock %}

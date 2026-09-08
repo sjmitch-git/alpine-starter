@@ -21,8 +21,8 @@ load_dotenv(BASE_DIR / ".env")
 
 # project metadata
 PROJECT_NAME = "Alpine.js Starter"
-PROJECT_TITLE = "Django + HTMX + Alpine.js + Tailwind Starter"
-PROJECT_DESCRIPTION = "A simple, modern starter template using: Django - backend,ynamic interactions without writing much JavaScript, Alpine.js – lightweight reactivity, Tailwind CSS – utility-first styling"
+PROJECT_TITLE = "Build Fast Django Apps with HTMX, Alpine.js & Tailwind"
+PROJECT_DESCRIPTION = "A simple, modern starter template built with Django, HTMX, Alpine.js, and Tailwind CSS. Perfect for building fast and interactive web applications with minimal JavaScript."
 # PROJECT_DOMAIN = "https://your-domain.vercel.app"
 
 # Quick-start development settings - unsuitable for production

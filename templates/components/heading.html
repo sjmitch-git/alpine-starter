@@ -1,0 +1,3 @@
+{% with heading_level=level|default:"h1" %}
+<{{ heading_level }}{% if classes %} class="{{ classes }}"{% endif %}>{{ text }}</{{ heading_level }}>
+{% endwith %}

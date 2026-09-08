@@ -33,12 +33,22 @@
     <!-- Alpine.js -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body class="bg-gray-50 text-gray-900 antialiased"
+<body class="bg-gray-50 text-gray-900 antialiased min-h-screen flex flex-col"
       hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'>
 
-    <div class="min-h-screen">
+    {% block header %}
+        {% include "includes/header.html" %}
+    {% endblock %}
+
+    <main class="flex flex-1" id="content">
+        <article class='article container mx-auto px-4 py-8 space-y-8'>
         {% block content %}{% endblock %}
-    </div>
+        </article>
+    </main>
+
+    {% block footer %}
+        {% include "includes/footer.html" %}
+    {% endblock %}
 
 </body>
 </html>

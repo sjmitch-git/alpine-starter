@@ -28,6 +28,9 @@ PROJECT_DESCRIPTION = "A simple, modern starter template built with Django, HTMX
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.1/howto/deployment/checklist/
 
+# GOOGLE TAG
+GTAG_ID = os.environ.get('GTAG_ID', 'G-XXXXXXXXXX')
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-temporary-key-for-local-dev')
 

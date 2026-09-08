@@ -444,8 +444,8 @@
   @media (prefers-color-scheme: dark) {
     :root, :host {
       --color-primary: #818cf8;
-      --color-secondary: #34d399;
-      --color-accent: #fbbf24;
+      --color-secondary: #09865d;
+      --color-accent: #e21d60;
       --color-success: #34d399;
       --color-warning: #fbbf24;
       --color-danger: #f87171;

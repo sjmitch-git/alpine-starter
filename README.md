@@ -19,8 +19,8 @@ A simple, modern starter template using:
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/sjmitch-git/alpine-starter.git
-cd alpine-starter
+git clone https://github.com/sjmitch-git/alpine-starter.git my-project
+cd my-project
 
 # 2. Create virtual environment
 python -m venv .venv
@@ -58,6 +58,13 @@ alpine-starter/
 │   │   └── ...
 │   └── static/                 # Compiled CSS (generated)
 ├── templates/                  # Global templates
+│   ├── components/
+│   │   │   └── heading.html
+│   │   │   └── ...
+│   ├── includes/
+│   │   │   └── header.html
+│   │   │   └── footer.html
+│   │   │   └── ...
 │   └── base.html               # Base template with HTMX + Alpine + Tailwind
 ├── config/                     # Project settings (or your project name)
 │   ├── settings.py
@@ -65,7 +72,7 @@ alpine-starter/
 │   └── ...
 ├── manage.py
 ├── requirements.txt
-├── package.json                # (optional)
+├── package.json
 └── README.md
 
 

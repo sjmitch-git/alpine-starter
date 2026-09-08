@@ -111,4 +111,12 @@
       .min-h-stretch {
         min-height: stretch;
       }
+
+      .stretched-link {
+        @apply after:absolute after:inset-0;
+      }
+
+      .no-print {
+        @apply print:hidden;
+      }
   }

@@ -1,10 +1,12 @@
 {
   "name": "alpine",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple, modern starter template using: Django - backend, dynamic interactions without writing much JavaScript, Alpine.js – lightweight reactivity, Tailwind CSS – utility-first styling",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "python manage.py runserver",
+    "watch:css": "python manage.py tailwind start"
   },
   "keywords": [],
   "author": "",

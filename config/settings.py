@@ -23,6 +23,7 @@ load_dotenv(BASE_DIR / ".env")
 PROJECT_NAME = "Alpine.js Starter"
 PROJECT_TITLE = "Django + HTMX + Alpine.js + Tailwind Starter"
 PROJECT_DESCRIPTION = "A simple, modern starter template using: Django - backend,ynamic interactions without writing much JavaScript, Alpine.js – lightweight reactivity, Tailwind CSS – utility-first styling"
+# PROJECT_DOMAIN = "https://your-domain.vercel.app"
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.1/howto/deployment/checklist/

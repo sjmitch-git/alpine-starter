@@ -36,8 +36,8 @@ pip install -r requirements.txt
 python manage.py tailwind install
 
 # 5. Run the project
-python manage.py tailwind start          # Terminal 1
-python manage.py runserver               # Terminal 2
+npm run watch:css   # Terminal 1
+npm run dev         # Terminal 2
 ```
 
 ## Project Structure

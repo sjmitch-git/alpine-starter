@@ -77,7 +77,7 @@
   }
 
   pre {
-    @apply text-left font-mono text-sm bg-gray-100 dark:bg-gray-800 p-2 rounded-md overflow-x-auto leading-loose;
+    @apply text-left font-mono text-sm bg-gray-100 dark:bg-gray-800 p-4 rounded-md overflow-x-auto leading-loose;
   }
 }
 

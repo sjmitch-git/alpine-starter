@@ -15,6 +15,22 @@ A simple, modern starter template using:
 - Live reload with django-browser-reload
 - Clean project structure
 
+## Prerequisites
+
+Before you begin, make sure you have the following installed on your machine:
+
+- Python 3
+- Node.js
+- npm
+
+You can verify they are installed with:
+
+```bash
+python --version
+node --version
+npm --version
+```
+
 ## Quick Start
 
 ```bash
@@ -33,7 +49,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 # 4. Install Tailwind dependencies
-python manage.py tailwind install
+cd theme/static_src
+npm install
 
 # 5. Run the project
 npm run watch:css   # Terminal 1
